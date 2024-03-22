@@ -55,8 +55,8 @@ const novaTarefa = () => {
 
 <template>
   <Cabecalho :tarefas-pendentes="getTarefasPendentes().length" />
-  <Formulario :muda-filtro="evento => estado.filtro = evento.EventTarget.value" :tarefa-temp="estado.tarefaTemp"
-    :edita-tarefa-temp="evento => estado.tarefaTemp = evento.EventTarget.value" :nova-tarefa="novaTarefa()" />
+  <Formulario :muda-filtro="evento => estado.filtro = evento.target.value" :tarefa-temp="estado.tarefaTemp"
+    :edita-tarefa-temp="evento => estado.tarefaTemp = evento.target.value" :nova-tarefa="novaTarefa()" />
   <ListaDeTarefas :tarefas="getTarefasFiltradas()" />
 </template>
 
