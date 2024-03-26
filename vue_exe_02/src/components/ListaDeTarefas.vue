@@ -1,6 +1,7 @@
 <script setup>
 const props = defineProps([ 'tarefas' ])
 </script>
+
 <template>
     <ul class="list-group mt-4">
         <div class="container">
@@ -14,3 +15,5 @@ const props = defineProps([ 'tarefas' ])
         </div>
     </ul>
 </template>
+
+<style scoped></style>
