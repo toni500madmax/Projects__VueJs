@@ -1,16 +1,13 @@
 <script setup>
 import { reactive } from 'vue';
+import Cabecalho from './components/Cabecalho.vue';
+import Formulario from './components/Formulario.vue';
 import ListaDeTarefas from './components/ListaDeTarefas.vue';
 
 const estado = reactive({
   filtro: "todas",
   tarefaTemp: '',
-  tarefas: [
-    {
-      titulo: '',
-      finalizada: false
-    }
-  ],
+  tarefas: [],
 });
 
 const getTarefasPendentes = () => {
@@ -46,9 +43,9 @@ const novaTarefa = () => {
 <template>
 
   <div class="container">
-    <cabecalho :tarefas-pendentes="getTarefasPendentes().length" />
-    <formulario :muda-filtro="evento => estado.filtro = evento.target.value" :tarefa-temp="estado.tarefaTemp"
-      :edita-tarefa-temp="evento => estado.tarefaTemp = evento.target.value" :nova-tarefa="novaTarefa" />
+    <Cabecalho :tarefas-pendentes="getTarefasPendentes().length" />
+    <Formulario :muda-filtro="evento => { estado.filtro = evento.target.value }" :tarefa-temp="estado.tarefaTemp"
+      :edita-tarefa-temp="evento => { estado.tarefaTemp = evento.target.value }" :nova-tarefa="novaTarefa" />
     <ListaDeTarefas :tarefas="getTarefasFiltradas()" />
   </div>
 </template>
@@ -64,9 +61,5 @@ const novaTarefa = () => {
 .container {
   width: min(100%, 940px);
   margin-inline: auto;
-}
-
-.done {
-  text-decoration: line-through;
 }
 </style>

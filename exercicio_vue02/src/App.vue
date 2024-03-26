@@ -4,14 +4,7 @@ import { reactive } from 'vue';
 const estado = reactive({
   filtro: "todas",
   tarefaTemp: '',
-  tarefas: [ {
-    titulo: "Estudar",
-    finalizada: true
-  },
-  {
-    titulo: "Academia",
-    finalizada: false
-  }
+  tarefas: [
   ]
 });
 
