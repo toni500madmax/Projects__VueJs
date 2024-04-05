@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+    padding: 16px 0 16px;
+    text-align: center;
+}
+
+header {
+    background-color: antiquewhite;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.left {
+    margin-right: 10px;
+}
+
+.formulario-container {
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.resposta-container {
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.resposta-resposta {
+    margin-top: 16px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+}

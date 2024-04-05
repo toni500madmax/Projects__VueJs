@@ -5,7 +5,8 @@ import Operacoes from './components/Operacoes.vue';
 import Resultado from './components/Resultado.vue';
 
 const estado = reactive({
-  // O operation receberá a mudança da operação. Por padrão pode-se usar o calculo de soma
+  // O operation receberá a mudança da operação. 
+  // Por padrão pode-se usar o calculo de soma
   operation: "+",
   num1: "",
   num2: "",

@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
     <header>
         <h1>Calculadora Reativa VueJS</h1>

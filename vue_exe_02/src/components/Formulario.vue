@@ -1,5 +1,4 @@
 <script setup>
-
 const props = defineProps([ 'novaTarefa', 'tarefaTemp', 'mudaFiltro', 'editaTarefaTemp' ]);
 </script>
 
