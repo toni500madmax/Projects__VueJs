@@ -1,4 +1,4 @@
-<script steup>
+<script setup>
 const props = defineProps([ "value1", "value2", "operacao" ]);
 </script>
 
