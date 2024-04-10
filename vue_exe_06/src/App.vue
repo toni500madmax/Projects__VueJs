@@ -27,8 +27,10 @@ const printResult = () => {
 <template>
   <Cabecalho />
   <Formulario :value1="event => estado.value1 = event.target.value"
-    :value2="event => estado.value2 = event.target.value" :operacao="event => estado.operacao = event.target.value" />
-  <Resposta :value1="estado.value1" :value2="estado.value2" :resultado="printResult()" />
+    :value2="event => estado.value2 = event.target.value" 
+    :operacao="event => estado.operation = event.target.value" />
+  <Resposta :value1="estado.value1" :value2="estado.value2" 
+  :resultado="printResult()" />
 </template>
 
 <style scoped></style>
